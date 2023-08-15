@@ -3,8 +3,7 @@ import { Field } from './models/field';
 
 @Component({
     selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css']
+    template: ` <app-form [fieldDataList]="fieldDataList" [fieldValues]="fieldValues"></app-form> `
 })
 export class AppComponent {
     fieldDataList: Readonly<Field[]> = [

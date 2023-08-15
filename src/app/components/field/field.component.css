@@ -1,8 +1,0 @@
-button {
-    width: 90px;
-}
-
-label > span:last-of-type {
-    font-size: 14px;
-    font-style: italic;
-}
