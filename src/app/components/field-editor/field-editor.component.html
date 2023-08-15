@@ -1,5 +1,1 @@
-&nbsp;<input
-    [type]="fieldData.type"
-    [(ngModel)]="fieldValues[fieldData.name]"
-    [ngModelOptions]="{ standalone: true }"
-/>
+<input [(ngModel)]="fieldValues[fieldData.name]" [ngModelOptions]="{ standalone: true }" [type]="fieldData.type" />

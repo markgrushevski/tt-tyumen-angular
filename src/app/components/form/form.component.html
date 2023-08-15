@@ -1,13 +1,10 @@
 <form>
-    <fieldset [class]="{ editBorder: showEditor, defaultBorder: !showEditor }">
-        <button (click)="showEditor = !showEditor">{{ showEditor ? 'End editing' : 'Edit fields' }}</button>
-        <legend>Field group {{ showEditor ? 'editor' : 'data' }}</legend>
-        <label *ngFor="let fieldData of fieldDataList">
-            <span>{{ fieldData.name }}</span>
-            <ndc-dynamic
-                [ndcDynamicComponent]="component"
-                [ndcDynamicInputs]="{ fieldData, fieldValues }"
-            ></ndc-dynamic>
-        </label>
+    <fieldset>
+        <legend>Field group</legend>
+        <app-field
+            *ngFor="let fieldData of fieldDataList"
+            [fieldData]="fieldData"
+            [fieldValues]="fieldValues"
+        ></app-field>
     </fieldset>
 </form>

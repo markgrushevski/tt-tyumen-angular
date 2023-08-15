@@ -2,13 +2,12 @@ import { Component, Input } from '@angular/core';
 import { Field } from '../../models/field';
 
 @Component({
-    selector: 'app-form',
-    templateUrl: './form.component.html',
-    styleUrls: ['./form.component.css']
+    selector: 'app-field-base',
+    template: ``
 })
-export class FormComponent {
+export class FieldBaseComponent {
     @Input({ required: true })
-    fieldDataList!: Readonly<Field[]>;
+    fieldData!: Readonly<Field>;
 
     @Input({ required: true })
     fieldValues!: Record<string, unknown>;

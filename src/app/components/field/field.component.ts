@@ -1,15 +1,17 @@
-import { Component, Input } from '@angular/core';
-import { Field } from '../../models/field';
+import { Component } from '@angular/core';
+import { FieldBaseComponent } from '../../components/field-base/field-base.component';
+import { FieldEditorComponent } from '../field-editor/field-editor.component';
+import { FieldValueComponent } from '../field-value/field-value.component';
 
 @Component({
     selector: 'app-field',
     templateUrl: './field.component.html',
     styleUrls: ['./field.component.css']
 })
-export class FieldComponent {
-    @Input({ required: true })
-    fieldData!: Field;
+export class FieldComponent extends FieldBaseComponent {
+    showEditor = false;
 
-    @Input({ required: true })
-    fieldValues!: Record<string, unknown>;
+    get component() {
+        return this.showEditor ? FieldEditorComponent : FieldValueComponent;
+    }
 }

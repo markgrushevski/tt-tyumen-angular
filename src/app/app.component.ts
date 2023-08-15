@@ -7,7 +7,7 @@ import { Field } from './models/field';
     styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    fieldDataList: readonly Field[] = [
+    fieldDataList: Readonly<Field[]> = [
         { name: 'Email', type: 'email' },
         { name: 'Password', type: 'password' },
         { name: 'Number', type: 'number' },
@@ -17,7 +17,7 @@ export class AppComponent {
     fieldValues: Record<string, unknown> = {
         Email: 'example@hotmail.com',
         Password: 'example',
-        Number: 534,
+        Number: '534',
         Text: 'some text'
     };
 }

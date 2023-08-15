@@ -1,1 +1,5 @@
-<span>:&nbsp;{{ fieldValues[fieldData.name] }}</span>
+<label>
+    <button (click)="showEditor = !showEditor">{{ showEditor ? 'End editing' : 'Edit field' }}</button>
+    <span>&nbsp;{{ fieldData.name }}:&nbsp;</span>
+    <ndc-dynamic [ndcDynamicComponent]="component" [ndcDynamicInputs]="{ fieldData, fieldValues }"></ndc-dynamic>
+</label>
