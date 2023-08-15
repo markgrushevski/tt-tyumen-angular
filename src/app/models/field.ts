@@ -1,4 +1,4 @@
 export interface Field {
     name: string;
-    type: 'email' | 'password' | 'number' | 'text';
+    type: 'email' | 'number' | 'password' | 'text';
 }

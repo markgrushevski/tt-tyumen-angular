@@ -9,15 +9,15 @@ import { Field } from './models/field';
 export class AppComponent {
     fieldDataList: Readonly<Field[]> = [
         { name: 'Email', type: 'email' },
-        { name: 'Password', type: 'password' },
         { name: 'Number', type: 'number' },
+        { name: 'Password', type: 'password' },
         { name: 'Text', type: 'text' }
     ];
 
     fieldValues: Record<string, unknown> = {
         Email: 'example@hotmail.com',
-        Password: 'example',
         Number: '534',
+        Password: 'example',
         Text: 'some text'
     };
 }
