@@ -1,0 +1,27 @@
+form {
+    margin-top: 16px;
+    max-width: 50vw;
+}
+
+button {
+    padding: 4px;
+    max-width: 100px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+
+    border: 2px solid lightcoral;
+    border-radius: 3px;
+}
+
+.defaultBorder {
+    border-color: lightcoral;
+}
+
+.editBorder {
+    border-color: darkseagreen;
+}
