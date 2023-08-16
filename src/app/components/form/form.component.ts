@@ -14,8 +14,7 @@ import { Field } from '../../models/field';
                 ></app-field>
             </fieldset>
         </form>
-    `,
-    styleUrls: ['./form.component.css']
+    `
 })
 export class FormComponent {
     @Input({ required: true })
