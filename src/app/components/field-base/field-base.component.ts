@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Field } from '../../models/field';
+import { FieldValues } from '../../models/fieldValues';
 
 @Component({
     selector: 'app-field-base',
@@ -10,5 +11,5 @@ export class FieldBaseComponent {
     fieldData!: Readonly<Field>;
 
     @Input({ required: true })
-    fieldValues!: Record<string, unknown>;
+    fieldValues!: FieldValues;
 }

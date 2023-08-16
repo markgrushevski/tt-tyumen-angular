@@ -26,7 +26,7 @@ fieldset {
     border-radius: 3px;
 }
 
-label > span:last-of-type {
+label:last-child :not(:first-child) {
     font-size: 14px;
     font-style: italic;
 }

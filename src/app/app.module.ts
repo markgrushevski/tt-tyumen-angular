@@ -5,11 +5,10 @@ import { DynamicModule } from 'ng-dynamic-component';
 
 import { AppComponent } from './app.component';
 import { FieldBaseComponent } from './components/field-base/field-base.component';
-import { FieldEditorBaseComponent } from './components/field-editor-base/field-editor-base.component';
+import { FieldEditorBooleanComponent } from './components/field-editor-boolean/field-editor-boolean.component';
+import { FieldEditorDateComponent } from './components/field-editor-date/field-editor-date.component';
 import { FieldEditorEmailComponent } from './components/field-editor-email/field-editor-email.component';
 import { FieldEditorNumberComponent } from './components/field-editor-number/field-editor-number.component';
-import { FieldEditorPasswordComponent } from './components/field-editor-password/field-editor-password.component';
-import { FieldEditorTextComponent } from './components/field-editor-text/field-editor-text.component';
 import { FieldComponent } from './components/field/field.component';
 import { FormComponent } from './components/form/form.component';
 
@@ -20,10 +19,9 @@ import { FormComponent } from './components/form/form.component';
         FieldComponent,
         FieldBaseComponent,
         FieldEditorEmailComponent,
-        FieldEditorPasswordComponent,
         FieldEditorNumberComponent,
-        FieldEditorTextComponent,
-        FieldEditorBaseComponent
+        FieldEditorDateComponent,
+        FieldEditorBooleanComponent
     ],
     imports: [BrowserModule, DynamicModule, FormsModule],
     providers: [],

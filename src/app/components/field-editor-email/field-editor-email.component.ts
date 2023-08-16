@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { FieldEditorBaseComponent } from '../field-editor-base/field-editor-base.component';
+import { FieldBaseComponent } from '../field-base/field-base.component';
 
 @Component({
     selector: 'app-field-editor-email',
-    template: ` <app-field-editor-base [fieldData]="fieldData" [fieldValues]="fieldValues"></app-field-editor-base> `
+    template: ` <input type="email" [(ngModel)]="fieldValues[fieldData.name]" [name]="fieldData.name" /> `
 })
-export class FieldEditorEmailComponent extends FieldEditorBaseComponent {}
+export class FieldEditorEmailComponent extends FieldBaseComponent {}

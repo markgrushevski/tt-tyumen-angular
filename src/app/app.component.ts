@@ -7,16 +7,16 @@ import { Field } from './models/field';
 })
 export class AppComponent {
     fieldDataList: Readonly<Field[]> = [
+        { name: 'Boolean', type: 'boolean' },
+        { name: 'Date', type: 'date' },
         { name: 'Email', type: 'email' },
-        { name: 'Number', type: 'number' },
-        { name: 'Password', type: 'password' },
-        { name: 'Text', type: 'text' }
+        { name: 'Number', type: 'number' }
     ];
 
     fieldValues: Record<string, unknown> = {
+        Boolean: true,
+        Date: '2020-07-07',
         Email: 'example@hotmail.com',
-        Number: '534',
-        Password: 'example',
-        Text: 'some text'
+        Number: 9000
     };
 }
